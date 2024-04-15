@@ -1,0 +1,41 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+body {
+  background: url('skyaniv.png') no-repeat center center fixed; 
+  background-size: cover;
+}
+
+canvas {
+  display: block;
+}
+
+.control-panel {
+  width: 300px; /* O el ancho que prefieras */
+  padding: 20px;
+  background: rgba(0,0,0,0.5); /* O el color/fondo que prefieras */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  #titleImage {
+    width: 100%; /* Hace que la imagen ocupe el ancho completo del panel de control */
+    max-height: 100px; /* Puedes ajustar esto según la altura deseada */
+    object-fit: contain; /* Asegura que la imagen se adapte sin perder sus proporciones */
+  }
+}
+
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}

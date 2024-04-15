@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>DG</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <div class="game-container">
+    <canvas id="canvas"></canvas>
+    <div class="control-panel">
+      <img src="dung.png" id="titleImage" alt="Dungeon Generator">
+      <button id="newDungeon">Generar Nuevo Dungeon</button>
+      <!-- Inputs para tamaño de bloques y del canvas -->
+      <label for="blockSizeInput">Tamaño de Bloques:</label>
+      <input type="number" id="blockSizeInput" value="40">
+      
+      <label for="canvasSizeInput">Tamaño del Canvas:</label>
+      <input type="number" id="canvasSizeInput" value="18">
+      
+      <button id="applyChanges">Aplicar Cambios</button>
+    </div>
+  </div>
+</body>
+</html>
